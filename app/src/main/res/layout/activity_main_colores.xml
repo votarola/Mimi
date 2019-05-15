@@ -1,0 +1,55 @@
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:textSize="20dp"
+        android:text="¿Cual es el color amarillo?"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonRojo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        app:srcCompat="@drawable/rojo" />
+
+    <ImageButton
+        android:id="@+id/imageButtonVerde"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/imageButtonRojo"
+        app:srcCompat="@drawable/verde" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRosa"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="false"
+        android:layout_toRightOf="@+id/imageButtonRojo"
+        android:layout_above="@+id/imageButtonRojo"
+        app:srcCompat="@drawable/rosa" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAmarillo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/imageButtonRojo"
+        android:layout_toLeftOf="@+id/imageButtonRojo"
+        android:onClick="amarillo"
+        app:srcCompat="@drawable/amarillo" />
+
+
+
+
+</RelativeLayout>

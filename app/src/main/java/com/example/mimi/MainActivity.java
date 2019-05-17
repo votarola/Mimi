@@ -33,9 +33,11 @@ public class MainActivity extends AppCompatActivity {
      btnSaludar.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
+             Intent intent = new Intent(MainActivity.this,MainActivityVoz.class);
+             startActivity(intent);
 
-             String ingresa = IngresaNombre.getText().toString();
-            tvmensaje.setText(ingresa + " como estas");
+            // String ingresa = IngresaNombre.getText().toString();
+            //tvmensaje.setText(ingresa + " como estas");
 
 
 
@@ -43,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
      });
 
 
-        btnjuego.setOnClickListener(new View.OnClickListener() {
+     btnjuego.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,MainActivity_Colores.class);

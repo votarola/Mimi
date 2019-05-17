@@ -30,6 +30,7 @@ public class MainActivity_Colores extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_Colores.this, MainActivity_result_ok.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -39,6 +40,7 @@ public class MainActivity_Colores extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_Colores.this, MainActivity_result_nok.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -47,6 +49,7 @@ public class MainActivity_Colores extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_Colores.this, MainActivity_result_nok.class);
                 startActivity(intent);
+                finish();
             }
         });
         imageButtonVerde.setOnClickListener(new View.OnClickListener() {
@@ -54,6 +57,7 @@ public class MainActivity_Colores extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_Colores.this, MainActivity_result_nok.class);
                 startActivity(intent);
+                finish();
             }
         });
         next1.setOnClickListener(new View.OnClickListener() {
@@ -61,6 +65,7 @@ public class MainActivity_Colores extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity_Colores1.class);
                 startActivity(intent);
+                finish();
 
             }
         });

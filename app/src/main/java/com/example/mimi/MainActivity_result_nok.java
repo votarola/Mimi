@@ -18,7 +18,7 @@ public class MainActivity_result_nok extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity_result_nok.this, MainActivity_Colores.class);
                     startActivity(intent);
                 }
-            }, 4000);
+            }, 3000);
         }
     }
 

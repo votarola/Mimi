@@ -12,7 +12,7 @@ public class MainActivity_Colores1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_colores);
+        setContentView(R.layout.activity_main_colores1);
 
         imageButtonRosa = (ImageButton) findViewById(R.id.imageButtonRosa);
         imageButtonRojo = (ImageButton) findViewById(R.id.imageButtonRojo);

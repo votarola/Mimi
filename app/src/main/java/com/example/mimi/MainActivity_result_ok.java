@@ -15,7 +15,7 @@ public class MainActivity_result_ok extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main__result_ok);
+        setContentView(R.layout.activity_main_result_ok);
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -23,6 +23,6 @@ public class MainActivity_result_ok extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity_result_ok.this, MainActivity_Colores.class);
                 startActivity(intent);
             }
-        }, 4000);
+        }, 3000);
     }
 }

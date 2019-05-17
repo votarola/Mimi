@@ -5,12 +5,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class MainActivity_Colores extends AppCompatActivity {
 
     ImageButton imageButtonRosa, imageButtonRojo, imageButtonAmarillo, imageButtonVerde;
     Button next1;
+    private Button hablarAhoraBoton;
+    private TextView editText;
+    TTSManager ttsManager=null;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +28,21 @@ public class MainActivity_Colores extends AppCompatActivity {
         imageButtonAmarillo = (ImageButton) findViewById(R.id.imageButtonAmarillo);
         imageButtonVerde = (ImageButton) findViewById(R.id.imageButtonVerde);
         next1 = (Button) findViewById(R.id.next1);
+
+        ttsManager=new TTSManager();
+        ttsManager.init(this);
+
+        editText =findViewById(R.id.txtamarillo);
+        hablarAhoraBoton=findViewById(R.id.buttonamarillo);
+
+        hablarAhoraBoton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String text=editText.getText().toString();
+                ttsManager.initQueue(text);
+            }
+        });
+
 
 
 
@@ -71,4 +92,9 @@ public class MainActivity_Colores extends AppCompatActivity {
         });
 
     }
+            @Override
+            protected void onDestroy() {
+                super.onDestroy();
+                ttsManager.shutDown();
+            }
 }

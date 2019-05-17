@@ -1,12 +1,12 @@
-<LinearLayout
+<RelativeLayout
 
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".MainActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo2"
+    tools:context=".MainActivity">
     
     <ScrollView
         android:layout_width="match_parent"
@@ -16,49 +16,43 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-    
 
 
-     <EditText
-        android:id="@+id/txtingresa"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="@string/nombre"
-        android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textSize="25dp"
+            android:layout_gravity="center_horizontal"
+            android:text="¿Juegos?"
+            android:layout_alignParentTop="true"
+            android:shape="rectangle"
+            android:textAppearance="@style/Base.Theme.AppCompat.Light.DarkActionBar"/>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnSaludar"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="145dp"
+            tools:ignore="MissingConstraints" />
 
 
-     <Button
-        android:id="@+id/btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btnSaludar"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="145dp"
-        tools:ignore="MissingConstraints" />
-
-
-     <TextView
-        android:id="@+id/tvmensaje"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="center_horizontal"
-        android:padding="14dp"
-        android:text="@string/prueba" android:textSize="20dp"
-        android:textColorHighlight="@color/colorPrimary" />
-
-     <Button
-        android:id="@+id/btnjuego"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btnjuego"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="145dp"
-        tools:ignore="MissingConstraints" />
+         <Button
+            android:id="@+id/btnjuego"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnjuego"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="145dp"
+            tools:ignore="MissingConstraints" />
 
         </LinearLayout>
 
     </ScrollView>
 
-</LinearLayout>
+</RelativeLayout>
+
+
 

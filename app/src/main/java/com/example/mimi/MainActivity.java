@@ -13,9 +13,6 @@ import org.w3c.dom.Text;
 public class MainActivity extends AppCompatActivity {
 
     Button btnSaludar,btnjuego;
-    EditText IngresaNombre;
-    TextView tvmensaje;
-
 
 
     @Override
@@ -24,8 +21,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
      btnSaludar = (Button) findViewById(R.id.btn);
-     IngresaNombre = (EditText) findViewById(R.id.txtingresa);
-     tvmensaje = (TextView) findViewById(R.id.tvmensaje);
      btnjuego = (Button) findViewById(R.id.btnjuego) ;
 
 
@@ -35,11 +30,6 @@ public class MainActivity extends AppCompatActivity {
          public void onClick(View v) {
              Intent intent = new Intent(MainActivity.this,MainActivityVoz.class);
              startActivity(intent);
-
-            // String ingresa = IngresaNombre.getText().toString();
-            //tvmensaje.setText(ingresa + " como estas");
-
-
 
          }
      });

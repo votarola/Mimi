@@ -12,7 +12,7 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnSaludar,btnSiguiente,btnjuego;
+    Button btnSaludar,btnjuego;
     EditText IngresaNombre;
     TextView tvmensaje;
 
@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
      btnSaludar = (Button) findViewById(R.id.btn);
      IngresaNombre = (EditText) findViewById(R.id.txtingresa);
      tvmensaje = (TextView) findViewById(R.id.tvmensaje);
-     btnSiguiente = (Button) findViewById(R.id.btnSiguiente) ;
      btnjuego = (Button) findViewById(R.id.btnjuego) ;
 
 
@@ -42,13 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
          }
      });
-        btnSiguiente.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,MapsActivity.class);
-                startActivity(intent);
-            }
-        });
+
 
         btnjuego.setOnClickListener(new View.OnClickListener() {
             @Override

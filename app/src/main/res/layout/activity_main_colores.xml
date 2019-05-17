@@ -49,6 +49,14 @@
         android:onClick="amarillo"
         app:srcCompat="@drawable/amarillo" />
 
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageButtonRojo"
+        android:text="Siguiente"
+        android:layout_centerInParent="true"
+        android:id="@+id/next1"
+        />
 
 
 

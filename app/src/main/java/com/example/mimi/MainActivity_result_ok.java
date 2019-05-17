@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 
-public class MainActivity_Colores_Amarillo extends AppCompatActivity {
+public class MainActivity_result_ok extends AppCompatActivity {
 
     Button buttonvolver;
 
@@ -20,7 +20,7 @@ public class MainActivity_Colores_Amarillo extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity_Colores_Amarillo.this, MainActivity_Colores.class);
+                Intent intent = new Intent(MainActivity_result_ok.this, MainActivity_Colores.class);
                 startActivity(intent);
             }
         }, 4000);

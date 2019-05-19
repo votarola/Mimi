@@ -11,7 +11,7 @@
 
 
     <Button
-        android:id="@+id/buttonrosado"
+        android:id="@+id/buttonverde"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="130dp"
@@ -21,7 +21,7 @@
         android:textSize="20dp"
         android:background="@android:color/transparent"
         android:shape="rectangle"
-        android:text="¿Cual es el color Rosado?" />
+        android:text="¿Cual es el color Verde?" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,8 +29,8 @@
         android:layout_centerHorizontal="true"
         android:padding="20dp"
         android:textSize="20dp"
-        android:id="@+id/txtrosado"
-        android:text="¿Cual es el color Rosado?"
+        android:id="@+id/txtverde"
+        android:text="¿Cual es el color Verde?"
         android:shape="rectangle"
         android:visibility="invisible"
         android:layout_below="@+id/progressBar"
@@ -69,14 +69,14 @@
         android:layout_toLeftOf="@+id/imageButtonRojo"
         android:onClick="amarillo"
         app:srcCompat="@drawable/amarillo" />
-    
+
     <Button
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_below="@+id/imageButtonRojo"
         android:text="Siguiente"
         android:layout_centerInParent="true"
-        android:id="@+id/next2"
+        android:id="@+id/next3"
         android:backgroundTint="@color/cardview_dark_background"
         android:shape="rectangle"/>
 
@@ -87,8 +87,6 @@
         android:layout_height="50dp"
         android:layout_below="@+id/next1"
         android:layout_centerInParent="true"/>
-
-
 
 
 </RelativeLayout>

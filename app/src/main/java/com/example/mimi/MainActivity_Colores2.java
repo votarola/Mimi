@@ -1,5 +1,4 @@
 package com.example.mimi;
-
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,17 +7,17 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class MainActivity_Colores1 extends AppCompatActivity {
+public class MainActivity_Colores2 extends AppCompatActivity {
     ImageButton imageButtonRosa, imageButtonRojo, imageButtonAmarillo, imageButtonVerde;
     private Button hablarAhoraBoton;
     private TextView editText;
-    Button next2;
+    Button next3;
     TTSManager ttsManager=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_colores1);
+        setContentView(R.layout.activity_main_colores2);
 
         imageButtonRosa = (ImageButton) findViewById(R.id.imageButtonRosa);
         imageButtonRojo = (ImageButton) findViewById(R.id.imageButtonRojo);
@@ -28,8 +27,8 @@ public class MainActivity_Colores1 extends AppCompatActivity {
         ttsManager=new TTSManager();
         ttsManager.init(this);
 
-        editText =findViewById(R.id.txtrosado);
-        hablarAhoraBoton=findViewById(R.id.buttonrosado);
+        editText =findViewById(R.id.txtverde);
+        hablarAhoraBoton=findViewById(R.id.buttonverde);
 
         hablarAhoraBoton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,7 +41,7 @@ public class MainActivity_Colores1 extends AppCompatActivity {
         imageButtonAmarillo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_Colores1.this, MainActivity_result_nok.class);
+                Intent intent = new Intent(MainActivity_Colores2.this, MainActivity_result_nok.class);
                 startActivity(intent);
                 finish();
             }
@@ -52,7 +51,7 @@ public class MainActivity_Colores1 extends AppCompatActivity {
         imageButtonRosa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_Colores1.this, MainActivity_result_ok.class);
+                Intent intent = new Intent(MainActivity_Colores2.this, MainActivity_result_ok.class);
                 startActivity(intent);
                 finish();
             }
@@ -61,7 +60,7 @@ public class MainActivity_Colores1 extends AppCompatActivity {
         imageButtonRojo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_Colores1.this, MainActivity_result_nok.class);
+                Intent intent = new Intent(MainActivity_Colores2.this, MainActivity_result_nok.class);
                 startActivity(intent);
                 finish();
             }
@@ -69,16 +68,16 @@ public class MainActivity_Colores1 extends AppCompatActivity {
         imageButtonVerde.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_Colores1.this, MainActivity_result_nok.class);
+                Intent intent = new Intent(MainActivity_Colores2.this, MainActivity_result_nok.class);
                 startActivity(intent);
                 finish();
             }
         });
 
-        next2.setOnClickListener(new View.OnClickListener() {
+        next3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity_Colores2.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
                 finish();
 

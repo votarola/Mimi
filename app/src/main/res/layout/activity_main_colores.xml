@@ -75,6 +75,7 @@
         android:layout_below="@+id/imageButtonRojo"
         android:text="Siguiente"
         android:layout_centerInParent="true"
+        android:backgroundTint="@color/cardview_dark_background"
         android:id="@+id/next1"
         android:shape="rectangle"/>
 

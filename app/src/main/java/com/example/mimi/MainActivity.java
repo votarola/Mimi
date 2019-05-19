@@ -12,7 +12,8 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnSaludar,btnjuego;
+    //Button btnSaludar;
+    Button btnjuego;
 
 
     @Override
@@ -20,12 +21,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-     btnSaludar = (Button) findViewById(R.id.btn);
+   //  btnSaludar = (Button) findViewById(R.id.btn);
      btnjuego = (Button) findViewById(R.id.btnjuego) ;
 
 
 
-     btnSaludar.setOnClickListener(new View.OnClickListener() {
+   /*  btnSaludar.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
              Intent intent = new Intent(MainActivity.this,MainActivityVoz.class);
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
          }
      });
-
+*/
 
      btnjuego.setOnClickListener(new View.OnClickListener() {
             @Override

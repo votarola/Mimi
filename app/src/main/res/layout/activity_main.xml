@@ -29,14 +29,6 @@
             android:shape="rectangle"
             android:textAppearance="@style/Base.Theme.AppCompat.Light.DarkActionBar"/>
 
-        <Button
-            android:id="@+id/btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/btnSaludar"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="145dp"
-            tools:ignore="MissingConstraints" />
 
 
          <Button
@@ -44,6 +36,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btnjuego"
+            android:backgroundTint="@color/cardview_light_background"
+            android:fallbackLineSpacing="true"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="145dp"
             tools:ignore="MissingConstraints" />

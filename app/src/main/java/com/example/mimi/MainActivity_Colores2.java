@@ -19,7 +19,7 @@ public class MainActivity_Colores2 extends AppCompatActivity {
                 imageButtonNegro;
     private Button hablarAhoraBoton;
     private TextView editText;
-    Button panverde;
+    Button next1;
     TTSManager ttsManager=null;
 
     @Override
@@ -31,7 +31,7 @@ public class MainActivity_Colores2 extends AppCompatActivity {
         imageButtonRojo = findViewById(R.id.imageButtonRojo);
         imageButtonAmarillo = findViewById(R.id.imageButtonAmarillo);
         imageButtonVerde = findViewById(R.id.imageButtonVerde);
-        panverde= findViewById(R.id.panverde);
+        next1= findViewById(R.id.next1);
         editText =findViewById(R.id.txtverde);
         hablarAhoraBoton=findViewById(R.id.buttonverde);
 
@@ -130,7 +130,7 @@ public class MainActivity_Colores2 extends AppCompatActivity {
         });
 
 
-        panverde.setOnClickListener(new View.OnClickListener() {
+        next1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_Colores2.this, MainActivity.class);

@@ -38,7 +38,7 @@
         android:id="@+id/imageButtonMorado"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_toLeftOf="@+id/panamarillo"
+        android:layout_toLeftOf="@+id/next1"
         android:layout_below="@+id/imageButtonRosa"
         android:layout_margin="5dp"
         app:srcCompat="@drawable/morado" />
@@ -47,7 +47,7 @@
         android:id="@+id/imageButtonGris"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_toRightOf="@+id/panamarillo"
+        android:layout_toRightOf="@+id/next1"
         android:layout_below="@+id/imageButtonRosa"
         android:layout_margin="5dp"
         app:srcCompat="@drawable/gris" />
@@ -92,7 +92,7 @@
         android:id="@+id/imageButtonNaranjo"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_toLeftOf="@+id/panamarillo"
+        android:layout_toLeftOf="@+id/next1"
         android:layout_below="@+id/imageButtonMorado"
         android:layout_margin="5dp"
         app:srcCompat="@drawable/naranjo" />
@@ -101,8 +101,8 @@
         android:id="@+id/imageButtonNegro"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_toRightOf="@+id/panamarillo"
-        android:layout_above="@+id/panamarillo"
+        android:layout_toRightOf="@+id/next1"
+        android:layout_above="@+id/next1"
         android:layout_margin="5dp"
         app:srcCompat="@drawable/negro" />
 
@@ -116,7 +116,7 @@
         app:srcCompat="@drawable/azul" />
 
     <Button
-        android:id="@+id/panamarillo"
+        android:id="@+id/next1"
         android:layout_width="100dp"
         android:layout_height="55dp"
         android:layout_below="@+id/imageButtonAzul"
@@ -130,7 +130,7 @@
         style="?android:attr/progressBarStyle"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/panamarillo"
+        android:layout_below="@+id/next1"
         android:layout_centerHorizontal="true"/>
 
 

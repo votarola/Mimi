@@ -69,6 +69,7 @@
         android:layout_margin="5dp"
         app:srcCompat="@drawable/verde" />
 
+
     <ImageButton
         android:id="@+id/imageButtonRosa"
         android:layout_width="100dp"

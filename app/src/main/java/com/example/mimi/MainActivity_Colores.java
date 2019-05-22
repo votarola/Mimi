@@ -10,8 +10,18 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class MainActivity_Colores extends AppCompatActivity {
+/*
 
-    ImageButton imageButtonRosa, imageButtonRojo, imageButtonAmarillo, imageButtonVerde;
+ */
+    ImageButton imageButtonRosa,
+                imageButtonAmarillo,
+                imageButtonVerde,
+                imageButtonRojo,
+                imageButtonMorado,
+                imageButtonGris,
+                imageButtonNaranjo,
+                imageButtonAzul,
+                imageButtonNegro;
     Button panamarillo;
     private Button hablarAhoraBoton;
     private TextView editText;
@@ -23,18 +33,17 @@ public class MainActivity_Colores extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_colores);
 
-        imageButtonRosa = (ImageButton) findViewById(R.id.imageButtonRosa);
-        imageButtonRojo = (ImageButton) findViewById(R.id.imageButtonRojo);
-        imageButtonAmarillo = (ImageButton) findViewById(R.id.imageButtonAmarillo);
-        imageButtonVerde = (ImageButton) findViewById(R.id.imageButtonVerde);
-        panamarillo = (Button) findViewById(R.id.panamarillo);
-        ttsManager = new TTSManager();
-        ttsManager.init(this);
-
-
+        imageButtonRosa = findViewById(R.id.imageButtonRosa);
+        imageButtonRojo = findViewById(R.id.imageButtonRojo);
+        imageButtonAmarillo = findViewById(R.id.imageButtonAmarillo);
+        imageButtonVerde = findViewById(R.id.imageButtonVerde);
+        panamarillo = findViewById(R.id.panamarillo);
         editText = findViewById(R.id.txtamarillo);
         hablarAhoraBoton = findViewById(R.id.buttonamarillo);
 
+//metodo que llama al textvoz
+        ttsManager = new TTSManager();
+        ttsManager.init(this);
 
         hablarAhoraBoton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,6 +81,51 @@ public class MainActivity_Colores extends AppCompatActivity {
             }
         });
         imageButtonVerde.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity_Colores.this, MainActivity_result_nok.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        imageButtonMorado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity_Colores.this, MainActivity_result_nok.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        imageButtonGris.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity_Colores.this, MainActivity_result_nok.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        imageButtonNaranjo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity_Colores.this, MainActivity_result_nok.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        imageButtonAzul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity_Colores.this, MainActivity_result_nok.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        imageButtonNegro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_Colores.this, MainActivity_result_nok.class);

@@ -8,7 +8,7 @@ import android.widget.EditText;
 
 public class MainActivityVoz extends AppCompatActivity {
 
-
+/*
     private Button hablarAhoraBoton;
     private EditText editText;
     TTSManager ttsManager=null;
@@ -38,4 +38,6 @@ public class MainActivityVoz extends AppCompatActivity {
         super.onDestroy();
         ttsManager.shutDown();
     }
+
+    */
 }

@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-     btnSaludar = (Button) findViewById(R.id.btn);
-     btnjuego = (Button) findViewById(R.id.btnjuego) ;
+     btnSaludar = findViewById(R.id.btn);
+     btnjuego = findViewById(R.id.btnjuego);
 
 
 
@@ -43,3 +43,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 }
+
+
+//Instant Run Buggy deshabilitar

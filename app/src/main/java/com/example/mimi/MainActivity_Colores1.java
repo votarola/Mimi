@@ -9,10 +9,11 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class MainActivity_Colores1 extends AppCompatActivity {
+
     ImageButton imageButtonRosa, imageButtonRojo, imageButtonAmarillo, imageButtonVerde;
+    Button panrosado;
     private Button hablarAhoraBoton;
     private TextView editText;
-    Button next2;
     TTSManager ttsManager=null;
 
     @Override
@@ -27,7 +28,7 @@ public class MainActivity_Colores1 extends AppCompatActivity {
 
         ttsManager=new TTSManager();
         ttsManager.init(this);
-
+        panrosado= (Button) findViewById(R.id.panrosado);
         editText =findViewById(R.id.txtrosado);
         hablarAhoraBoton=findViewById(R.id.buttonrosado);
 
@@ -75,10 +76,11 @@ public class MainActivity_Colores1 extends AppCompatActivity {
             }
         });
 
-        next2.setOnClickListener(new View.OnClickListener() {
+        panrosado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity_Colores2.class);
+                Intent intent;
+                intent = new Intent(MainActivity_Colores1.this, MainActivity_Colores2.class);
                 startActivity(intent);
                 finish();
 

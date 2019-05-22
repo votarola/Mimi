@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class MainActivity_Colores extends AppCompatActivity {
 
     ImageButton imageButtonRosa, imageButtonRojo, imageButtonAmarillo, imageButtonVerde;
-    Button next1;
+    Button panamarillo;
     private Button hablarAhoraBoton;
     private TextView editText;
     TTSManager ttsManager=null;
@@ -27,24 +27,22 @@ public class MainActivity_Colores extends AppCompatActivity {
         imageButtonRojo = (ImageButton) findViewById(R.id.imageButtonRojo);
         imageButtonAmarillo = (ImageButton) findViewById(R.id.imageButtonAmarillo);
         imageButtonVerde = (ImageButton) findViewById(R.id.imageButtonVerde);
-        next1 = (Button) findViewById(R.id.next1);
-
-        ttsManager=new TTSManager();
+        panamarillo = (Button) findViewById(R.id.panamarillo);
+        ttsManager = new TTSManager();
         ttsManager.init(this);
 
-        editText =findViewById(R.id.txtamarillo);
-        hablarAhoraBoton=findViewById(R.id.buttonamarillo);
+
+        editText = findViewById(R.id.txtamarillo);
+        hablarAhoraBoton = findViewById(R.id.buttonamarillo);
+
 
         hablarAhoraBoton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String text=editText.getText().toString();
+                String text = editText.getText().toString();
                 ttsManager.initQueue(text);
             }
         });
-
-
-
 
         imageButtonAmarillo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,20 +79,20 @@ public class MainActivity_Colores extends AppCompatActivity {
                 finish();
             }
         });
-        next1.setOnClickListener(new View.OnClickListener() {
+
+        panamarillo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity_Colores1.class);
+                Intent intent = new Intent(MainActivity_Colores.this, MainActivity_Colores1.class);
                 startActivity(intent);
-                finish();
-
             }
         });
-
     }
+
             @Override
             protected void onDestroy() {
                 super.onDestroy();
                 ttsManager.shutDown();
             }
 }
+

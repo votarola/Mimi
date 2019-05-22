@@ -13,7 +13,7 @@
         android:id="@+id/buttonamarillo"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_height="80dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:padding="20dp"
@@ -23,24 +23,41 @@
         android:text="¿Cual es el color amarillo?" />
 
     <TextView
+        android:id="@+id/txtamarillo"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:id="@+id/txtamarillo"
-        android:layout_centerHorizontal="true"
-        android:padding="20dp"
-        android:textSize="20dp"
-        android:text="¿Cual es el color amarillo?"
-        android:shape="rectangle"
-        android:visibility="invisible"
         android:layout_below="@+id/progressBar"
-        android:textAppearance="@style/Base.Theme.AppCompat.Light.DarkActionBar"/>
+        android:layout_marginTop="153dp"
+        android:padding="20dp"
+        android:shape="rectangle"
+        android:text="¿Cual es el color Amarillo?"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMorado"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toLeftOf="@+id/panamarillo"
+        android:layout_below="@+id/imageButtonRosa"
+        android:layout_margin="5dp"
+        app:srcCompat="@drawable/morado" />
+
+    <ImageButton
+        android:id="@+id/imageButtonGris"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/panamarillo"
+        android:layout_below="@+id/imageButtonRosa"
+        android:layout_margin="5dp"
+        app:srcCompat="@drawable/gris" />
 
     <ImageButton
         android:id="@+id/imageButtonRojo"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_centerInParent="true"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         app:srcCompat="@drawable/rojo" />
 
     <ImageButton
@@ -49,15 +66,16 @@
         android:layout_height="100dp"
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/imageButtonRojo"
+        android:layout_margin="5dp"
         app:srcCompat="@drawable/verde" />
 
     <ImageButton
         android:id="@+id/imageButtonRosa"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_centerHorizontal="false"
         android:layout_toRightOf="@+id/imageButtonRojo"
         android:layout_above="@+id/imageButtonRojo"
+        android:layout_margin="5dp"
         app:srcCompat="@drawable/rosa" />
 
     <ImageButton
@@ -66,26 +84,53 @@
         android:layout_height="100dp"
         android:layout_above="@+id/imageButtonRojo"
         android:layout_toLeftOf="@+id/imageButtonRojo"
-        android:onClick="amarillo"
+        android:layout_margin="5dp"
         app:srcCompat="@drawable/amarillo" />
 
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="50dp"
+    <ImageButton
+        android:id="@+id/imageButtonNaranjo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toLeftOf="@+id/panamarillo"
+        android:layout_below="@+id/imageButtonMorado"
+        android:layout_margin="5dp"
+        app:srcCompat="@drawable/naranjo" />
+
+    <ImageButton
+        android:id="@+id/imageButtonNegro"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/panamarillo"
+        android:layout_above="@+id/panamarillo"
+        android:layout_margin="5dp"
+        app:srcCompat="@drawable/negro" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAzul"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_below="@+id/imageButtonRojo"
-        android:text="Siguiente"
-        android:layout_centerInParent="true"
-        android:backgroundTint="@color/cardview_dark_background"
-        android:id="@+id/next1"
-        android:shape="rectangle"/>
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        app:srcCompat="@drawable/azul" />
+
+    <Button
+        android:id="@+id/panamarillo"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/imageButtonAzul"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:shape="rectangle"
+        android:text="Siguiente" />
 
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/next1"
-        android:layout_centerInParent="true"/>
+        android:layout_below="@+id/panamarillo"
+        android:layout_centerHorizontal="true"/>
 
 
 

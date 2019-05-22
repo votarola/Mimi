@@ -11,7 +11,7 @@ public class MainActivity_Colores2 extends AppCompatActivity {
     ImageButton imageButtonRosa, imageButtonRojo, imageButtonAmarillo, imageButtonVerde;
     private Button hablarAhoraBoton;
     private TextView editText;
-    Button next3;
+    Button panverde;
     TTSManager ttsManager=null;
 
     @Override
@@ -23,6 +23,7 @@ public class MainActivity_Colores2 extends AppCompatActivity {
         imageButtonRojo = (ImageButton) findViewById(R.id.imageButtonRojo);
         imageButtonAmarillo = (ImageButton) findViewById(R.id.imageButtonAmarillo);
         imageButtonVerde = (ImageButton) findViewById(R.id.imageButtonVerde);
+        panverde= (Button) findViewById(R.id.panverde);
 
         ttsManager=new TTSManager();
         ttsManager.init(this);
@@ -51,7 +52,7 @@ public class MainActivity_Colores2 extends AppCompatActivity {
         imageButtonRosa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_Colores2.this, MainActivity_result_ok.class);
+                Intent intent = new Intent(MainActivity_Colores2.this, MainActivity_result_nok.class);
                 startActivity(intent);
                 finish();
             }
@@ -68,21 +69,19 @@ public class MainActivity_Colores2 extends AppCompatActivity {
         imageButtonVerde.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_Colores2.this, MainActivity_result_nok.class);
+                Intent intent = new Intent(MainActivity_Colores2.this, MainActivity_result_ok.class);
                 startActivity(intent);
                 finish();
             }
         });
-
-        next3.setOnClickListener(new View.OnClickListener() {
+        panverde.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(MainActivity_Colores2.this, MainActivity.class);
                 startActivity(intent);
                 finish();
 
             }
         });
-
     }
 }

@@ -36,23 +36,23 @@
             tools:layout_editor_absoluteY="145dp"
             tools:ignore="MissingConstraints" />
 
-         <Button
+        <Button
             android:id="@+id/btnjuego"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btnjuego"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="145dp"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            tools:ignore="MissingConstraints" />
+            tools:layout_editor_absoluteY="145dp" />
 
         <Button
             android:id="@+id/btncerrar"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/btncerrar"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_margin="5dp"/>
+            android:layout_margin="5dp"
+            android:text="@string/btncerrar" />
 
 
     </LinearLayout>

@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class MainActivity extends AppCompatActivity {
+public class Home extends AppCompatActivity {
 
     Button btnSaludar;
     Button btnjuego;
@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.home);
 
      btnSaludar = findViewById(R.id.btn);
      btnjuego = findViewById(R.id.btnjuego);
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
      btnSaludar.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
-             Intent intent = new Intent(MainActivity.this,MainActivityVoz.class);
+             Intent intent = new Intent(Home.this,MainActivityVoz.class);
              startActivity(intent);
 
          }
@@ -36,8 +36,20 @@ public class MainActivity extends AppCompatActivity {
      btnjuego.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,MainActivity_Colores.class);
+                Intent intent = new Intent(Home.this, ColorsYellow.class);
                 startActivity(intent);
+            }
+        });
+
+     Button btncerrar = (Button) findViewById(R.id.btncerrar);
+
+        //Implementación del botón "Salir"
+        btncerrar.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                setResult(RESULT_OK);
+                finish();
+
             }
         });
 

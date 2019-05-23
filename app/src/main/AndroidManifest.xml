@@ -15,12 +15,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity_Colores2"></activity>
+        <activity android:name=".ColorsBlack"></activity>
+        <activity android:name=".ColorsBlue" />
+        <activity android:name=".ColorsOrange" />
+        <activity android:name=".ColorsGray" />
+        <activity android:name=".ColorsPurple" />
+        <activity android:name=".ColorsRed" />
+        <activity android:name=".ColorsGreen" />
         <activity android:name=".MainActivityVoz" />
-        <activity android:name=".MainActivity_Colores1" />
+        <activity android:name=".ColorsPink" />
         <activity android:name=".MainActivity_result_nok" />
         <activity android:name=".MainActivity_result_ok" />
-        <activity android:name=".MainActivity_Colores" />
+        <activity android:name=".ColorsYellow" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -42,7 +48,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Home" />
     </application>
 
 </manifest>

@@ -1,11 +1,17 @@
 <resources>
     <string name="app_name">Mimi</string>
     <string name="prueba">PruebaAndroid</string>
-    <string name="nombre">""</string>
     <string name="btnSaludar">Saluda</string>
     <string name="btnmapa">Ir a mapa</string>
     <string name="btnVolver">Volver</string>
     <string name="btnSalir">Salir</string>
     <string name="title_activity_maps">Map</string>
     <string name="btnjuego">Juego de Colores</string>
+    <string name="btncerrar">Cerrar APP</string>
+    <string name="txtpurple">¿Cual es el color Morado?</string>
+    <string name="txtred">¿Cual es el color Rojo?</string>
+    <string name="txtgray">¿Cual es el color Gris?</string>
+    <string name="txtorange">¿Cual es el color Naranjo?</string>
+    <string name="txtblue">¿Cual es el color Azul?</string>
+    <string name="txtblack">¿Cual es el color Negro?</string>
 </resources>

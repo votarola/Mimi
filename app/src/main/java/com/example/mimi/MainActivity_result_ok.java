@@ -20,7 +20,7 @@ public class MainActivity_result_ok extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity_result_ok.this, MainActivity_Colores.class);
+                Intent intent = new Intent(MainActivity_result_ok.this, ColorsYellow.class);
                 startActivity(intent);
             }
         }, 3000);

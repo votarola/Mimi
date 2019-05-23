@@ -1,4 +1,5 @@
 package com.example.mimi;
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,33 +8,39 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class MainActivity_Colores2 extends AppCompatActivity {
+public class ColorsBlack extends AppCompatActivity {
+
     ImageButton imageButtonRosa,
-                imageButtonAmarillo,
-                imageButtonVerde,
-                imageButtonRojo,
-                imageButtonMorado,
-                imageButtonGris,
-                imageButtonNaranjo,
-                imageButtonAzul,
-                imageButtonNegro;
+            imageButtonAmarillo,
+            imageButtonVerde,
+            imageButtonRojo,
+            imageButtonMorado,
+            imageButtonGris,
+            imageButtonNaranjo,
+            imageButtonAzul,
+            imageButtonNegro;
+    Button next1;
     private Button hablarAhoraBoton;
     private TextView editText;
-    Button next1;
     TTSManager ttsManager=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_colores2);
+        setContentView(R.layout.colorsblack);
 
         imageButtonRosa = findViewById(R.id.imageButtonRosa);
-        imageButtonRojo = findViewById(R.id.imageButtonRojo);
         imageButtonAmarillo = findViewById(R.id.imageButtonAmarillo);
         imageButtonVerde = findViewById(R.id.imageButtonVerde);
+        imageButtonRojo = findViewById(R.id.imageButtonRojo);
+        imageButtonMorado = findViewById(R.id.imageButtonMorado);
+        imageButtonGris = findViewById(R.id.imageButtonGris);
+        imageButtonNaranjo = findViewById(R.id.imageButtonNaranjo);
+        imageButtonAzul = findViewById(R.id.imageButtonAzul);
+        imageButtonNegro = findViewById(R.id.imageButtonNegro);
         next1= findViewById(R.id.next1);
-        editText =findViewById(R.id.txtverde);
-        hablarAhoraBoton=findViewById(R.id.buttonverde);
+        editText =findViewById(R.id.txtblack);
+        hablarAhoraBoton=findViewById(R.id.buttonblack);
 
 //metodo que llama al textvoz
         ttsManager=new TTSManager();
@@ -50,7 +57,7 @@ public class MainActivity_Colores2 extends AppCompatActivity {
         imageButtonAmarillo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_Colores2.this, MainActivity_result_nok.class);
+                Intent intent = new Intent(ColorsBlack.this, MainActivity_result_nok.class);
                 startActivity(intent);
                 finish();
             }
@@ -60,7 +67,7 @@ public class MainActivity_Colores2 extends AppCompatActivity {
         imageButtonRosa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_Colores2.this, MainActivity_result_nok.class);
+                Intent intent = new Intent(ColorsBlack.this, MainActivity_result_nok.class);
                 startActivity(intent);
                 finish();
             }
@@ -69,7 +76,7 @@ public class MainActivity_Colores2 extends AppCompatActivity {
         imageButtonRojo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_Colores2.this, MainActivity_result_nok.class);
+                Intent intent = new Intent(ColorsBlack.this, MainActivity_result_nok.class);
                 startActivity(intent);
                 finish();
             }
@@ -77,7 +84,7 @@ public class MainActivity_Colores2 extends AppCompatActivity {
         imageButtonVerde.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_Colores2.this, MainActivity_result_ok.class);
+                Intent intent = new Intent(ColorsBlack.this, MainActivity_result_nok.class);
                 startActivity(intent);
                 finish();
             }
@@ -87,7 +94,7 @@ public class MainActivity_Colores2 extends AppCompatActivity {
         imageButtonMorado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_Colores2.this, MainActivity_result_nok.class);
+                Intent intent = new Intent(ColorsBlack.this, MainActivity_result_nok.class);
                 startActivity(intent);
                 finish();
             }
@@ -96,7 +103,7 @@ public class MainActivity_Colores2 extends AppCompatActivity {
         imageButtonGris.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_Colores2.this, MainActivity_result_nok.class);
+                Intent intent = new Intent(ColorsBlack.this, MainActivity_result_nok.class);
                 startActivity(intent);
                 finish();
             }
@@ -105,7 +112,7 @@ public class MainActivity_Colores2 extends AppCompatActivity {
         imageButtonNaranjo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_Colores2.this, MainActivity_result_nok.class);
+                Intent intent = new Intent(ColorsBlack.this, MainActivity_result_nok.class);
                 startActivity(intent);
                 finish();
             }
@@ -114,7 +121,7 @@ public class MainActivity_Colores2 extends AppCompatActivity {
         imageButtonAzul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_Colores2.this, MainActivity_result_nok.class);
+                Intent intent = new Intent(ColorsBlack.this, MainActivity_result_nok.class);
                 startActivity(intent);
                 finish();
             }
@@ -123,21 +130,22 @@ public class MainActivity_Colores2 extends AppCompatActivity {
         imageButtonNegro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_Colores2.this, MainActivity_result_nok.class);
+                Intent intent = new Intent(ColorsBlack.this, MainActivity_result_ok.class);
                 startActivity(intent);
                 finish();
             }
         });
-
 
         next1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_Colores2.this, MainActivity.class);
+                Intent intent;
+                intent = new Intent(ColorsBlack.this, Home.class);
                 startActivity(intent);
                 finish();
 
             }
         });
+
     }
 }

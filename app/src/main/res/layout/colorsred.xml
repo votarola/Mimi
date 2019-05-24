@@ -29,11 +29,10 @@
         android:text="@string/txtred"
         android:textSize="20dp"
         android:visibility="invisible"/>
-
     <ImageButton
         android:id="@+id/imageButtonMorado"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_toLeftOf="@+id/next1"
         android:layout_below="@+id/imageButtonRosa"
         android:layout_margin="5dp"
@@ -41,8 +40,8 @@
 
     <ImageButton
         android:id="@+id/imageButtonGris"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_toRightOf="@+id/next1"
         android:layout_below="@+id/imageButtonRosa"
         android:layout_margin="5dp"
@@ -50,16 +49,16 @@
 
     <ImageButton
         android:id="@+id/imageButtonRojo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_centerInParent="true"
         android:layout_margin="5dp"
         app:srcCompat="@drawable/rojo"/>
 
     <ImageButton
         android:id="@+id/imageButtonVerde"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/imageButtonRojo"
         android:layout_margin="5dp"
@@ -68,8 +67,8 @@
 
     <ImageButton
         android:id="@+id/imageButtonRosa"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_toRightOf="@+id/imageButtonRojo"
         android:layout_above="@+id/imageButtonRojo"
         android:layout_margin="5dp"
@@ -77,8 +76,8 @@
 
     <ImageButton
         android:id="@+id/imageButtonAmarillo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_above="@+id/imageButtonRojo"
         android:layout_toLeftOf="@+id/imageButtonRojo"
         android:layout_margin="5dp"
@@ -86,8 +85,8 @@
 
     <ImageButton
         android:id="@+id/imageButtonNaranjo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_toLeftOf="@+id/next1"
         android:layout_below="@+id/imageButtonMorado"
         android:layout_margin="5dp"
@@ -95,8 +94,8 @@
 
     <ImageButton
         android:id="@+id/imageButtonNegro"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_toRightOf="@+id/next1"
         android:layout_above="@+id/next1"
         android:layout_margin="5dp"
@@ -104,8 +103,8 @@
 
     <ImageButton
         android:id="@+id/imageButtonAzul"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_below="@+id/imageButtonRojo"
         android:layout_centerHorizontal="true"
         android:layout_margin="5dp"
@@ -113,13 +112,13 @@
 
     <Button
         android:id="@+id/next1"
-        android:layout_width="100dp"
-        android:layout_height="55dp"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
         android:layout_below="@+id/imageButtonAzul"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:shape="rectangle"
-        android:text="Siguiente"/>
+        android:background="@drawable/btn_continue"/>
 
     <ProgressBar
     android:id="@+id/progressBar"

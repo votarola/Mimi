@@ -1,6 +1,7 @@
 package com.example.mimi;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,10 +26,19 @@ public class ColorsYellow extends AppCompatActivity {
     TTSManager ttsManager=null;
 
 
+    private void setupActionBar(){
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null)  {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.colorsyellow);
+        setupActionBar();
 
         imageButtonRosa = findViewById(R.id.imageButtonRosa);
         imageButtonAmarillo = findViewById(R.id.imageButtonAmarillo);
@@ -61,7 +71,7 @@ public class ColorsYellow extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ColorsYellow.this, MainActivity_result_ok.class);
                 startActivity(intent);
-                finish();
+                ColorsYellow.this.finish();
             }
         });
 
@@ -71,7 +81,7 @@ public class ColorsYellow extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ColorsYellow.this, MainActivity_result_nok.class);
                 startActivity(intent);
-                finish();
+                ColorsYellow.this.finish();
             }
         });
 
@@ -80,7 +90,7 @@ public class ColorsYellow extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ColorsYellow.this, MainActivity_result_nok.class);
                 startActivity(intent);
-                finish();
+                ColorsYellow.this.finish();
             }
         });
         imageButtonVerde.setOnClickListener(new View.OnClickListener() {
@@ -88,7 +98,7 @@ public class ColorsYellow extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ColorsYellow.this, MainActivity_result_nok.class);
                 startActivity(intent);
-                finish();
+                ColorsYellow.this.finish();
             }
         });
 
@@ -97,7 +107,7 @@ public class ColorsYellow extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ColorsYellow.this, MainActivity_result_nok.class);
                 startActivity(intent);
-                finish();
+                ColorsYellow.this.finish();
             }
         });
 
@@ -106,7 +116,7 @@ public class ColorsYellow extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ColorsYellow.this, MainActivity_result_nok.class);
                 startActivity(intent);
-                finish();
+                ColorsYellow.this.finish();
             }
         });
 
@@ -115,7 +125,7 @@ public class ColorsYellow extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ColorsYellow.this, MainActivity_result_nok.class);
                 startActivity(intent);
-                finish();
+                ColorsYellow.this.finish();
             }
         });
 
@@ -124,7 +134,7 @@ public class ColorsYellow extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ColorsYellow.this, MainActivity_result_nok.class);
                 startActivity(intent);
-                finish();
+                ColorsYellow.this.finish();
             }
         });
 
@@ -133,7 +143,7 @@ public class ColorsYellow extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ColorsYellow.this, MainActivity_result_nok.class);
                 startActivity(intent);
-                finish();
+                ColorsYellow.this.finish();
             }
         });
 
@@ -142,8 +152,11 @@ public class ColorsYellow extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ColorsYellow.this, ColorsPink.class);
                 startActivity(intent);
+                ColorsYellow.this.finish();
             }
         });
+
+
     }
 
             @Override

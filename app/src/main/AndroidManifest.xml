@@ -15,18 +15,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ColorsBlack" />
-        <activity android:name=".ColorsBlue" />
-        <activity android:name=".ColorsOrange" />
-        <activity android:name=".ColorsGray" />
-        <activity android:name=".ColorsPurple" />
-        <activity android:name=".ColorsRed" />
-        <activity android:name=".ColorsGreen" />
-        <activity android:name=".MainActivityVoz" />
-        <activity android:name=".ColorsPink" />
+        <activity android:name=".ColorsBlack" android:parentActivityName=".Home"/>
+        <activity android:name=".ColorsBlue" android:parentActivityName=".Home"/>
+        <activity android:name=".ColorsOrange" android:parentActivityName=".Home"/>
+        <activity android:name=".ColorsGray" android:parentActivityName=".Home"/>
+        <activity android:name=".ColorsPurple" android:parentActivityName=".Home"/>
+        <activity android:name=".ColorsRed" android:parentActivityName=".Home"/>
+        <activity android:name=".ColorsGreen" android:parentActivityName=".Home"/>
+        <activity android:name=".MainActivityVoz" android:parentActivityName=".Home"/>
+        <activity android:name=".ColorsPink" android:parentActivityName=".Home"/>
         <activity android:name=".MainActivity_result_nok" />
         <activity android:name=".MainActivity_result_ok" />
-        <activity android:name=".ColorsYellow" />
+        <activity android:name=".ColorsYellow" android:parentActivityName=".Home" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -46,6 +46,7 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+
             </intent-filter>
         </activity>
         <activity android:name=".Home" />

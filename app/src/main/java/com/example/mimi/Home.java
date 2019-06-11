@@ -5,12 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 public class Home extends AppCompatActivity {
 
     Button btnSaludar;
     Button btnjuego;
+    Button btntoast;
 
 
     @Override
@@ -18,12 +20,21 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home);
 
-     btnSaludar = findViewById(R.id.btn);
+    // btnSaludar = findViewById(R.id.btn);
      btnjuego = findViewById(R.id.btnjuego);
+     btntoast = findViewById(R.id.btntoast);
 
 
+     btntoast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, MainActivity.class);
+                startActivity(intent);
 
-     btnSaludar.setOnClickListener(new View.OnClickListener() {
+            }
+        });
+
+    /* btnSaludar.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
              Intent intent = new Intent(Home.this,MainActivityVoz.class);
@@ -31,6 +42,7 @@ public class Home extends AppCompatActivity {
 
          }
      });
+     */
 
 
      btnjuego.setOnClickListener(new View.OnClickListener() {

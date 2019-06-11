@@ -5,11 +5,13 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class ColorsYellow extends AppCompatActivity {
+
+public class ColorsYellow extends AppCompatActivity  {
 
     ImageButton imageButtonRosa,
                 imageButtonAmarillo,
@@ -53,6 +55,7 @@ public class ColorsYellow extends AppCompatActivity {
         editText = findViewById(R.id.txtamarillo);
         hablarAhoraBoton = findViewById(R.id.buttonamarillo);
 
+
 //metodo que llama al textvoz
 
         ttsManager = new TTSManager();
@@ -66,12 +69,17 @@ public class ColorsYellow extends AppCompatActivity {
             }
         });
 
+
+
+
+
         imageButtonAmarillo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ColorsYellow.this, MainActivity_result_ok.class);
                 startActivity(intent);
                 ColorsYellow.this.finish();
+
             }
         });
 

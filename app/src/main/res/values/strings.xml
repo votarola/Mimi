@@ -8,7 +8,7 @@
     <string name="title_activity_maps">Map</string>
     <string name="btnjuego">Juego de Colores</string>
     <string name="btncerrar">Cerrar APP</string>
-    <string name="txtpurple"><b>¿Cual es el color Morado?</b></string>
+    <string name="txtpurple">¿Cual es el color Morado?</string>
     <string name="txtred">¿Cual es el color Rojo?</string>
     <string name="txtgray">¿Cual es el color Gris?</string>
     <string name="txtorange">¿Cual es el color Naranjo?</string>

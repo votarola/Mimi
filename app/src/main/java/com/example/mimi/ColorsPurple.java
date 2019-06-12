@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import es.dmoral.toasty.Toasty;
 
 public class ColorsPurple extends AppCompatActivity {
 
@@ -21,7 +24,6 @@ public class ColorsPurple extends AppCompatActivity {
                 imageButtonNaranjo,
                 imageButtonAzul,
                 imageButtonNegro;
-    Button next1;
     private Button hablarAhoraBoton;
     private TextView editText;
     TTSManager ttsManager=null;
@@ -49,7 +51,6 @@ public class ColorsPurple extends AppCompatActivity {
         imageButtonNaranjo = findViewById(R.id.imageButtonNaranjo);
         imageButtonAzul = findViewById(R.id.imageButtonAzul);
         imageButtonNegro = findViewById(R.id.imageButtonNegro);
-        next1= findViewById(R.id.next1);
         editText =findViewById(R.id.txtmorado);
         hablarAhoraBoton=findViewById(R.id.buttonmorado);
 
@@ -65,12 +66,27 @@ public class ColorsPurple extends AppCompatActivity {
             }
         });
 
+        imageButtonMorado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toasty.success(ColorsPurple.this, "Excelente, sigamos con la siguiente",
+                        Toast.LENGTH_SHORT, true).show();
+                ColorsPurple.this.finish();
+
+                Intent intent;
+                intent = new Intent(ColorsPurple.this, ColorsGray.class);
+                startActivity(intent);
+                ColorsPurple.this.finish();
+
+
+            }
+        });
+
         imageButtonAmarillo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ColorsPurple.this, MainActivity_result_nok.class);
-                startActivity(intent);
-                ColorsPurple.this.finish();
+                Toasty.error(ColorsPurple.this, "Error, vuelve a intentar",
+                        Toast.LENGTH_SHORT, true).show();
             }
         });
 
@@ -78,85 +94,59 @@ public class ColorsPurple extends AppCompatActivity {
         imageButtonRosa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ColorsPurple.this, MainActivity_result_nok.class);
-                startActivity(intent);
-                ColorsPurple.this.finish();
+                Toasty.error(ColorsPurple.this, "Error, vuelve a intentar",
+                        Toast.LENGTH_SHORT, true).show();
             }
         });
 
         imageButtonRojo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ColorsPurple.this, MainActivity_result_nok.class);
-                startActivity(intent);
-                ColorsPurple.this.finish();
+                Toasty.error(ColorsPurple.this, "Error, vuelve a intentar",
+                        Toast.LENGTH_SHORT, true).show();
             }
         });
         imageButtonVerde.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ColorsPurple.this, MainActivity_result_nok.class);
-                startActivity(intent);
-                ColorsPurple.this.finish();
+                Toasty.error(ColorsPurple.this, "Error, vuelve a intentar",
+                        Toast.LENGTH_SHORT, true).show();
             }
         });
 
-
-        imageButtonMorado.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ColorsPurple.this, MainActivity_result_ok.class);
-                startActivity(intent);
-                ColorsPurple.this.finish();
-            }
-        });
 
         imageButtonGris.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ColorsPurple.this, MainActivity_result_nok.class);
-                startActivity(intent);
-                ColorsPurple.this.finish();
+                Toasty.error(ColorsPurple.this, "Error, vuelve a intentar",
+                        Toast.LENGTH_SHORT, true).show();
             }
         });
 
         imageButtonNaranjo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ColorsPurple.this, MainActivity_result_nok.class);
-                startActivity(intent);
-                ColorsPurple.this.finish();
+                Toasty.error(ColorsPurple.this, "Error, vuelve a intentar",
+                        Toast.LENGTH_SHORT, true).show();
             }
         });
 
         imageButtonAzul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ColorsPurple.this, MainActivity_result_nok.class);
-                startActivity(intent);
-                ColorsPurple.this.finish();
+                Toasty.error(ColorsPurple.this, "Error, vuelve a intentar",
+                        Toast.LENGTH_SHORT, true).show();
             }
         });
 
         imageButtonNegro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ColorsPurple.this, MainActivity_result_nok.class);
-                startActivity(intent);
-                ColorsPurple.this.finish();
+                Toasty.error(ColorsPurple.this, "Error, vuelve a intentar",
+                        Toast.LENGTH_SHORT, true).show();
             }
         });
 
-        next1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent;
-                intent = new Intent(ColorsPurple.this, ColorsGray.class);
-                startActivity(intent);
-                ColorsPurple.this.finish();
-
-            }
-        });
 
     }
     @Override

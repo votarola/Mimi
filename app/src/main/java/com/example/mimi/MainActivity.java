@@ -39,9 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         infoToast = findViewById(R.id.btnInfoToast);
         iconToast = findViewById(R.id.btnIconToast);
 
-        ArrayAdapter adapter = new ArrayAdapter(MainActivity.this
-                , android.R.layout.simple_spinner_dropdown_item, toastTxtSize);
-        toastSize.setAdapter(adapter);
+
 
         normalToast.setOnClickListener(this);
         errorToast.setOnClickListener(this);
@@ -50,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         infoToast.setOnClickListener(this);
         iconToast.setOnClickListener(this);
         icon = getResources().getDrawable(R.drawable.ic_warning_white_48dp);
+
 
         toastSize.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -63,6 +62,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             }
         });
+
 
     }
 

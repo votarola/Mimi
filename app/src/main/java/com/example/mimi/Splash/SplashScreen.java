@@ -1,9 +1,12 @@
-package com.example.mimi;
+package com.example.mimi.Splash;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+
+import com.example.mimi.Home;
+import com.example.mimi.R;
 
 public class SplashScreen extends AppCompatActivity {
 

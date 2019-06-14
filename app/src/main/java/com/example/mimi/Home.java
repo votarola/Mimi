@@ -1,11 +1,13 @@
 package com.example.mimi;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+
+import com.example.mimi.Colors.ColorsYellow;
+import com.example.mimi.Numbers.Number3;
 
 
 public class Home extends AppCompatActivity {
@@ -13,6 +15,7 @@ public class Home extends AppCompatActivity {
     Button btnSaludar;
     Button btnjuego;
     Button btntoast;
+    Button btndados;
 
 
     @Override
@@ -23,6 +26,7 @@ public class Home extends AppCompatActivity {
     // btnSaludar = findViewById(R.id.btn);
      btnjuego = findViewById(R.id.btnjuego);
      btntoast = findViewById(R.id.btntoast);
+     btndados = findViewById(R.id.btndados);
 
 
      btntoast.setOnClickListener(new View.OnClickListener() {
@@ -34,15 +38,13 @@ public class Home extends AppCompatActivity {
             }
         });
 
-    /* btnSaludar.setOnClickListener(new View.OnClickListener() {
-         @Override
-         public void onClick(View v) {
-             Intent intent = new Intent(Home.this,MainActivityVoz.class);
-             startActivity(intent);
-
-         }
-     });
-     */
+    btndados.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(Home.this, Number3.class);
+            startActivity(intent);
+        }
+    });
 
 
      btnjuego.setOnClickListener(new View.OnClickListener() {
@@ -53,8 +55,8 @@ public class Home extends AppCompatActivity {
             }
         });
 
-     Button btncerrar = (Button) findViewById(R.id.btncerrar);
 
+     Button btncerrar = (Button) findViewById(R.id.btncerrar);
         //Implementación del botón "Salir"
         btncerrar.setOnClickListener(new View.OnClickListener() {
 

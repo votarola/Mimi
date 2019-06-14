@@ -32,6 +32,7 @@
             android:layout_height="wrap_content"
             android:text="prueba toast"
             style="@style/Widget.AppCompat.Button.Borderless"
+            android:textColor="@color/colorPrimary"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="145dp"
             tools:ignore="MissingConstraints" />
@@ -41,9 +42,23 @@
             style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_colores"
             android:text="@string/btnjuego"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="145dp" />
+
+        <Button
+            android:id="@+id/btndados"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btndados"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            android:drawableLeft="@drawable/ic_dados"
             tools:layout_editor_absoluteY="145dp" />
 
         <Button
@@ -51,6 +66,7 @@
             style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
             android:layout_margin="5dp"
             android:text="@string/btncerrar" />
 

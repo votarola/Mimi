@@ -7,6 +7,7 @@
     <string name="btnSalir">Salir</string>
     <string name="title_activity_maps">Map</string>
     <string name="btnjuego">Juego de Colores</string>
+    <string name="btndados">Juego de Numeros</string>
     <string name="btncerrar">Cerrar APP</string>
     <string name="txtpurple">¿Cual es el color Morado?</string>
     <string name="txtred">¿Cual es el color Rojo?</string>
@@ -14,4 +15,11 @@
     <string name="txtorange">¿Cual es el color Naranjo?</string>
     <string name="txtblue">¿Cual es el color Azul?</string>
     <string name="txtblack">¿Cual es el color Negro?</string>
+    <string name="txt1"><b>"1"</b></string>
+    <string name="txt2"><b>"2"</b></string>
+    <string name="txt3"><b>"3"</b></string>
+    <string name="txt4"><b>"4"</b></string>
+    <string name="txt5"><b>"5"</b></string>
+    <string name="txt6"><b>"6"</b></string>
+
 </resources>

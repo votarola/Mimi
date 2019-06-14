@@ -1,12 +1,11 @@
 package com.example.mimi;
 
 import android.content.Intent;
-import android.os.Handler;
-import android.provider.CalendarContract;
-import android.support.annotation.MainThread;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
 
+import com.example.mimi.Colors.ColorsYellow;
 
 
 public class MainActivity_result_nok extends AppCompatActivity {

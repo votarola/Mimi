@@ -15,38 +15,57 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
         <activity
-            android:name=".ColorsBlack"
+            android:name=".Numbers.Number1"
             android:parentActivityName=".Home" />
         <activity
-            android:name=".ColorsBlue"
+            android:name=".Numbers.Number2"
             android:parentActivityName=".Home" />
         <activity
-            android:name=".ColorsOrange"
+            android:name=".Numbers.Number3"
             android:parentActivityName=".Home" />
         <activity
-            android:name=".ColorsGray"
+            android:name=".Numbers.Number4"
             android:parentActivityName=".Home" />
         <activity
-            android:name=".ColorsPurple"
+            android:name=".Numbers.Number5"
             android:parentActivityName=".Home" />
         <activity
-            android:name=".ColorsRed"
+            android:name=".Numbers.Number6"
+            android:parentActivityName=".Home" />
+
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Colors.ColorsBlack"
             android:parentActivityName=".Home" />
         <activity
-            android:name=".ColorsGreen"
+            android:name=".Colors.ColorsBlue"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Colors.ColorsOrange"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Colors.ColorsGray"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Colors.ColorsPurple"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Colors.ColorsRed"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Colors.ColorsGreen"
             android:parentActivityName=".Home" />
         <activity
             android:name=".MainActivityVoz"
             android:parentActivityName=".Home" />
         <activity
-            android:name=".ColorsPink"
+            android:name=".Colors.ColorsPink"
             android:parentActivityName=".Home" />
         <activity android:name=".MainActivity_result_nok" />
         <activity android:name=".MainActivity_result_ok" />
         <activity
-            android:name=".ColorsYellow"
+            android:name=".Colors.ColorsYellow"
             android:parentActivityName=".Home" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -61,7 +80,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".SplashScreen"
+            android:name=".Splash.SplashScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

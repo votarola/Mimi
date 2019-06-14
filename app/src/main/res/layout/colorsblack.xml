@@ -34,73 +34,105 @@
         android:id="@+id/imageButtonMorado"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_toLeftOf="@+id/next1"
         android:layout_below="@+id/imageButtonRosa"
-        android:layout_margin="5dp"
-        app:srcCompat="@drawable/morado"/>
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@+id/next1"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/morado" />
 
     <ImageButton
         android:id="@+id/imageButtonGris"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_toRightOf="@+id/next1"
         android:layout_below="@+id/imageButtonRosa"
-        android:layout_margin="5dp"
-        app:srcCompat="@drawable/gris"/>
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/next1"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/gris" />
 
     <ImageButton
         android:id="@+id/imageButtonRojo"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_centerInParent="true"
-        android:layout_margin="5dp"
-        app:srcCompat="@drawable/rojo"/>
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/rojo" />
 
     <ImageButton
         android:id="@+id/imageButtonVerde"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_centerHorizontal="true"
         android:layout_above="@+id/imageButtonRojo"
-        android:layout_margin="5dp"
-        app:srcCompat="@drawable/verde"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/verde" />
 
 
     <ImageButton
         android:id="@+id/imageButtonRosa"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_toRightOf="@+id/imageButtonRojo"
         android:layout_above="@+id/imageButtonRojo"
-        android:layout_margin="5dp"
-        app:srcCompat="@drawable/rosa"/>
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/imageButtonRojo"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/rosa" />
 
     <ImageButton
         android:id="@+id/imageButtonAmarillo"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_above="@+id/imageButtonRojo"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
         android:layout_toLeftOf="@+id/imageButtonRojo"
-        android:layout_margin="5dp"
-        app:srcCompat="@drawable/amarillo"/>
+        android:onClick="onClick"
+        app:srcCompat="@drawable/amarillo" />
 
     <ImageButton
         android:id="@+id/imageButtonNaranjo"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_toLeftOf="@+id/next1"
         android:layout_below="@+id/imageButtonMorado"
-        android:layout_margin="5dp"
-        app:srcCompat="@drawable/naranjo"/>
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@+id/next1"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/naranjo" />
 
     <ImageButton
         android:id="@+id/imageButtonNegro"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_toRightOf="@+id/next1"
         android:layout_above="@+id/next1"
-        android:layout_margin="5dp"
-        app:srcCompat="@drawable/negro"/>
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/next1"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/negro" />
 
     <ImageButton
         android:id="@+id/imageButtonAzul"
@@ -108,8 +140,12 @@
         android:layout_height="70dp"
         android:layout_below="@+id/imageButtonRojo"
         android:layout_centerHorizontal="true"
-        android:layout_margin="5dp"
-        app:srcCompat="@drawable/azul"/>
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/azul" />
 
     <Button
         android:id="@+id/next1"

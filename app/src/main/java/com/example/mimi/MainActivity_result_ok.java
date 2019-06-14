@@ -1,10 +1,12 @@
 package com.example.mimi;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.widget.Button;
+
+import com.example.mimi.Colors.ColorsYellow;
 
 public class MainActivity_result_ok extends AppCompatActivity {
 

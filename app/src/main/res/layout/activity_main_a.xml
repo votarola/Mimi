@@ -5,24 +5,48 @@
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo6"
     android:gravity="center"
     android:orientation="vertical">
 
     <ImageButton
-        android:id="@+id/LetraE"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/LetraI"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
         android:onClick="onClick"
+        app:srcCompat="@drawable/letra_i"/>
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/LetraA"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:layout_above="@+id/LetraI"
         app:srcCompat="@drawable/letra_a"/>
 
     <ImageButton
-        android:id="@+id/LetraA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/LetraE"
-        android:onClick="onClick"
-        app:srcCompat="@drawable/letra_a" />
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/LetraI"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/letra_u"/>
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@id/LetraI"
+        android:layout_alignBaseline="@id/LetraI"
+        android:src="@drawable/letra_o"/>
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_toLeftOf="@id/LetraI"
+        android:layout_alignBaseline="@id/LetraI"
+        android:src="@drawable/letra_e"/>
 
 
 

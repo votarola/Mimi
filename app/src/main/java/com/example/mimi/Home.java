@@ -12,10 +12,7 @@ import com.example.mimi.Numbers.Number3;
 
 public class Home extends AppCompatActivity {
 
-    Button btnSaludar;
-    Button btnjuego;
-    Button btntoast;
-    Button btndados;
+    Button btnvocales,btnjuego,btntoast,btndados;
 
 
     @Override
@@ -23,16 +20,15 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home);
 
-    // btnSaludar = findViewById(R.id.btn);
      btnjuego = findViewById(R.id.btnjuego);
      btntoast = findViewById(R.id.btntoast);
      btndados = findViewById(R.id.btndados);
-
+     btnvocales = findViewById(R.id.btnvocales);
 
      btntoast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Home.this, MainActivity.class);
+                Intent intent = new Intent(Home.this, MainActivity_toast.class);
                 startActivity(intent);
 
             }
@@ -55,8 +51,15 @@ public class Home extends AppCompatActivity {
             }
         });
 
+     btnvocales.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, MainActivity_a.class);
+                startActivity(intent);
+            }
+        });
 
-     Button btncerrar = (Button) findViewById(R.id.btncerrar);
+        Button btncerrar = (Button) findViewById(R.id.btncerrar);
         //Implementación del botón "Salir"
         btncerrar.setOnClickListener(new View.OnClickListener() {
 

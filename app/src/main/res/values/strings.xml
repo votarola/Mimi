@@ -8,6 +8,7 @@
     <string name="title_activity_maps">Map</string>
     <string name="btnjuego">Juego de Colores</string>
     <string name="btndados">Juego de Numeros</string>
+    <string name="btnvocales">Juego de Vocales</string>
     <string name="btncerrar">Cerrar APP</string>
     <string name="txtpurple">¿Cual es el color Morado?</string>
     <string name="txtred">¿Cual es el color Rojo?</string>
@@ -21,5 +22,20 @@
     <string name="txt4"><b>"4"</b></string>
     <string name="txt5"><b>"5"</b></string>
     <string name="txt6"><b>"6"</b></string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="txtletra_a">¿Cual es la letra A?</string>
+    <string name="txtletra_e">¿Cual es la letra E?</string>
+    <string name="txtletra_i">¿Cual es la letra I?</string>
+    <string name="txtletra_o">¿Cual es la letra O?</string>
+    <string name="txtletra_u">¿Cual es la letra U?</string>
 
 </resources>

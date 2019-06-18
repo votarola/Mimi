@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import es.dmoral.toasty.Toasty;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity_toast extends AppCompatActivity implements View.OnClickListener {
 
     Spinner toastSize;
     Button normalToast;
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_toast);
 
         toastSize = findViewById(R.id.spToastSize);
         normalToast = findViewById(R.id.btnNormalToast);
@@ -70,27 +70,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (view.getId()) {
             case R.id.btnNormalToast:
-                Toasty.normal(MainActivity.this, "This is a normal toast message",
+                Toasty.normal(MainActivity_toast.this, "This is a normal toast message",
                         Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnErrorToast:
-                Toasty.error(MainActivity.this, "This is an error toast message",
+                Toasty.error(MainActivity_toast.this, "This is an error toast message",
                         Toast.LENGTH_SHORT, true).show();
                 break;
             case R.id.btnWarningToast:
-                Toasty.warning(MainActivity.this, "This is a warning toast message",
+                Toasty.warning(MainActivity_toast.this, "This is a warning toast message",
                         Toast.LENGTH_SHORT, true).show();
                 break;
             case R.id.btnSuccessToast:
-                Toasty.success(MainActivity.this, "This is a success toast message",
+                Toasty.success(MainActivity_toast.this, "This is a success toast message",
                         Toast.LENGTH_SHORT, true).show();
                 break;
             case R.id.btnInfoToast:
-                Toasty.info(MainActivity.this, "This is a info toast message",
+                Toasty.info(MainActivity_toast.this, "This is a info toast message",
                         Toast.LENGTH_SHORT, true).show();
                 break;
             case R.id.btnIconToast:
-                Toasty.normal(MainActivity.this, "This is a toast message with icon",
+                Toasty.normal(MainActivity_toast.this, "This is a toast message with icon",
                         icon).show();
                 break;
 

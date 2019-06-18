@@ -9,6 +9,27 @@
     android:gravity="center"
     android:orientation="vertical">
 
+
+    <Button
+        android:id="@+id/btn_letra_a"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/LetraA"
+        android:layout_marginTop="-250dp"
+        android:background="@android:color/transparent"
+        android:padding="20dp"
+        android:text="@string/txtletra_a"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtletra_a"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-180dp"
+        android:text="@string/txtletra_a"
+        android:visibility="invisible" />
+
     <ImageButton
         android:id="@+id/LetraI"
         android:layout_width="70dp"
@@ -31,6 +52,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_below="@id/LetraI"
+        android:id="@+id/LetraU"
         android:layout_centerHorizontal="true"
         android:src="@drawable/letra_u"/>
 
@@ -38,6 +60,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_toRightOf="@id/LetraI"
+        android:id="@+id/LetraO"
         android:layout_alignBaseline="@id/LetraI"
         android:src="@drawable/letra_o"/>
 
@@ -45,6 +68,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_toLeftOf="@id/LetraI"
+        android:id="@+id/LetraE"
         android:layout_alignBaseline="@id/LetraI"
         android:src="@drawable/letra_e"/>
 

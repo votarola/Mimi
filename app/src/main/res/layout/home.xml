@@ -67,6 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="JUEGO DE LETRAS"
+            android:drawableLeft="@drawable/ic_vocales"
             android:textColor="@color/colorPrimary"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="0dp"

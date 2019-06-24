@@ -1,16 +1,18 @@
 package com.example.mimi;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import es.dmoral.toasty.Toasty;
 
-public class MainActivity_a extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity_e extends AppCompatActivity implements View.OnClickListener {
+
 
 
     private Button hablarAhoraBoton;
@@ -25,10 +27,11 @@ public class MainActivity_a extends AppCompatActivity implements View.OnClickLis
         }
     }
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_a);
+        setContentView(R.layout.activity_main_e);
         setupActionBar();
 
         findViewById(R.id.LetraA).setOnClickListener(this);
@@ -36,8 +39,8 @@ public class MainActivity_a extends AppCompatActivity implements View.OnClickLis
         findViewById(R.id.LetraI).setOnClickListener(this);
         findViewById(R.id.LetraO).setOnClickListener(this);
         findViewById(R.id.LetraU).setOnClickListener(this);
-        editText = findViewById(R.id.txtletra_a);
-        hablarAhoraBoton = findViewById(R.id.btn_letra_a);
+        editText = findViewById(R.id.txtletra_e);
+        hablarAhoraBoton = findViewById(R.id.btn_letra_e);
 
 //metodo que llama al textvoz
         ttsManager = new TTSManager();
@@ -56,17 +59,17 @@ public class MainActivity_a extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.LetraA:
-                Toasty.success(MainActivity_a.this, "Excelente!!",
+            case R.id.LetraE:
+                Toasty.success(MainActivity_e.this, "Excelente!!",
                         Toast.LENGTH_SHORT, true).show();
-                Intent intent = new Intent(MainActivity_a.this, MainActivity_e.class);
+                Intent intent = new Intent(MainActivity_e.this, MainActivity_i.class);
                 startActivity(intent);
-                MainActivity_a.this.finish();
+                MainActivity_e.this.finish();
 
                 break;
 
             default:
-                Toasty.error(MainActivity_a.this, "Vuelve a intentarlo!",
+                Toasty.error(MainActivity_e.this, "Vuelve a intentarlo!",
                         Toast.LENGTH_SHORT, true).show();
 
         }
